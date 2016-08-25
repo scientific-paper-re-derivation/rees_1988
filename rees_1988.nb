@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3803,        135]
-NotebookOptionsPosition[      3391,        115]
-NotebookOutlinePosition[      3727,        130]
-CellTagsIndexPosition[      3684,        127]
+NotebookDataLength[     10278,        330]
+NotebookOptionsPosition[      9711,        305]
+NotebookOutlinePosition[     10048,        320]
+CellTagsIndexPosition[     10005,        317]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -110,11 +110,201 @@ Cell[BoxData[
     FractionBox["M6", "M1"], ")"}], 
    RowBox[{"1", "/", "3"}]]}]], "Output",
  CellChangeTimes->{{3.681114697077346*^9, 3.681114703051673*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "The rationale behind equation 2 is as follows: Beyond ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "h"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " the motion of stars is assumed to be ballistic, so the number of stars \
+that enter that radius is of the order  of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["N", "*"], "\[Sigma]", " ", 
+    SuperscriptBox[
+     SubscriptBox["r", "h"], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". To approach the black hole with a periapse distance below ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "min"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " a star must have an angular momentum below ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{"G", " ", 
+     SubscriptBox["M", "h"], 
+     SubscriptBox["r", "min"]}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Only stars moving within a small angle \[Theta] will reach ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "min"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Theta]", "=", 
+    RowBox[{
+     FractionBox[
+      SqrtBox[
+       RowBox[{"G", " ", 
+        SubscriptBox["M", "h"], " ", 
+        SubscriptBox["r", "min"]}]], 
+      RowBox[{
+       SubscriptBox["r", "h"], "\[Sigma]"}]], 
+     RowBox[{"<<", "1"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The probability for a star to reach ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "min"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[Theta]", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so overall the rate is"
+}], "Text",
+ CellChangeTimes->{{3.681114824192457*^9, 3.6811150007856607`*^9}, {
+  3.681115064412999*^9, 3.6811150932487297`*^9}, {3.6811151298718147`*^9, 
+  3.6811151313416157`*^9}, {3.681115167005823*^9, 3.681115191902342*^9}, {
+  3.6811152380767107`*^9, 3.681115407610777*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["\[Theta]", "2"], "Ns", " ", "\[Sigma]", " ", 
+   SuperscriptBox["rh", "2"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"\[Theta]", "\[Rule]", 
+    FractionBox[
+     SqrtBox[
+      RowBox[{"G", " ", "Mh", " ", "rmin"}]], 
+     RowBox[{"rh", " ", "\[Sigma]"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"rmin", "\[Rule]", " ", 
+    FractionBox["rt", "\[Beta]"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"rt", "\[Rule]", " ", 
+    RowBox[{"Rs", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["Mh", "Ms"], ")"}], 
+      RowBox[{"1", "/", "3"}]]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"Ms", "\[Rule]", "Msol"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"Mh", "\[Rule]", " ", 
+    RowBox[{
+     SuperscriptBox["10", "6"], "Msol", " ", "M6"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"Rs", "\[Rule]", "Rsol"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"\[Sigma]", "\[Rule]", " ", 
+    RowBox[{"100", "*", 
+     FractionBox["km", "second"], "\[Sigma]2"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"Ns", "\[Rule]", " ", 
+    RowBox[{
+     SuperscriptBox["10", "5"], 
+     SuperscriptBox["pc", 
+      RowBox[{"-", "3"}]], "Ns5"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"Rsol", "\[Rule]", " ", 
+    RowBox[{"695", "\[ThinSpace]", "500", "*", "km"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"G", "\[Rule]", " ", 
+    RowBox[{"6.674", 
+     StyleBox["\[Times]",
+      LineColor->GrayLevel[0.5],
+      FrontFaceColor->GrayLevel[0.5],
+      BackFaceColor->GrayLevel[0.5],
+      GraphicsColor->GrayLevel[0.5],
+      FontColor->GrayLevel[0.5]], 
+     SuperscriptBox["10", 
+      RowBox[{"-", "8"}]], "*", "dyne", "*", 
+     RowBox[{
+      SuperscriptBox["cm", "2"], "/", 
+      SuperscriptBox["gram", "2"]}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"dyne", "\[Rule]", " ", 
+    RowBox[{"gram", "*", 
+     RowBox[{"cm", "/", 
+      SuperscriptBox["second", "2"]}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"pc", "\[Rule]", " ", 
+    RowBox[{"3.086", 
+     StyleBox["\[Times]",
+      LineColor->GrayLevel[0.5],
+      FrontFaceColor->GrayLevel[0.5],
+      BackFaceColor->GrayLevel[0.5],
+      GraphicsColor->GrayLevel[0.5],
+      FontColor->GrayLevel[0.5]], 
+     SuperscriptBox["10", "16"], "*", "meter"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"meter", "\[Rule]", " ", 
+    RowBox[{"100", " ", "cm"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"Msol", "\[Rule]", " ", 
+    RowBox[{"2", "*", 
+     SuperscriptBox["10", "30"], "kg"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{"kg", "\[Rule]", " ", 
+    RowBox[{"1000", " ", "gram"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"second", "\[Rule]", " ", 
+    FractionBox["year", 
+     RowBox[{"3.154", "\[Times]", 
+      SuperscriptBox["10", "7"]}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PowerExpand", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "[", "%", "]"}]}], "Input",
+ CellChangeTimes->{{3.681115401300466*^9, 3.681115588425425*^9}, {
+  3.681115638504718*^9, 3.681115644152607*^9}, {3.681115679767642*^9, 
+  3.681115698151629*^9}, {3.6811157309195423`*^9, 3.68111585994162*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"4.9778858193226905`*^-6", " ", 
+   SuperscriptBox["M6", 
+    RowBox[{"4", "/", "3"}]], " ", "Ns5"}], 
+  RowBox[{"year", " ", "\[Beta]", " ", "\[Sigma]2"}]]], "Output",
+ CellChangeTimes->{{3.681115424038052*^9, 3.68111558433986*^9}, 
+   3.681115644496711*^9, {3.681115698327345*^9, 3.681115740043571*^9}, {
+   3.68111577078749*^9, 3.681115860447484*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 717},
-WindowMargins->{{Automatic, -43}, {25, Automatic}},
+WindowMargins->{{Automatic, -211}, {Automatic, 14}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -135,11 +325,14 @@ Cell[710, 25, 153, 2, 33, "Text"],
 Cell[CellGroupData[{
 Cell[888, 31, 2239, 72, 193, "Input"],
 Cell[3130, 105, 233, 6, 49, "Output"]
+}, Open  ]],
+Cell[3378, 114, 2015, 62, 147, "Text"],
+Cell[CellGroupData[{
+Cell[5418, 180, 3870, 111, 585, "Input"],
+Cell[9291, 293, 392, 8, 54, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
